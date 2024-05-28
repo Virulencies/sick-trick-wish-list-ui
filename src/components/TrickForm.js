@@ -26,18 +26,18 @@ const TrickForm = ({ addTrick }) => {
     <form onSubmit={handleSubmit}>
       <label>
         Choose your Stance:
-        <select value={stance} onChange={(e) => setStance(e.target.value)}>
+        <select name="stance" value={stance} onChange={(e) => setStance(e.target.value)}>
           <option value="regular">Regular</option>
           <option value="switch">Switch</option>
         </select>
       </label>
       <label>
         Name of Trick:
-        <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+        <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} />
       </label>
       <label>
         Choose your Obstacle:
-        <select value={obstacle} onChange={(e) => setObstacle(e.target.value)}>
+        <select name="obstacle" value={obstacle} onChange={(e) => setObstacle(e.target.value)}>
           <option value="flatground">Flatground</option>
           <option value="ledge">Ledge</option>
           <option value="rail">Rail</option>

@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
-import { fetchTricks } from '../../api/trickCalls';
+import { fetchTricks, addTrick } from '../../api/trickCalls';
 import TrickList from '../TrickList';
 import TrickForm from '../TrickForm';
 
@@ -26,7 +26,7 @@ const App = () => {
     setTricks([...tricks, newTrick]);
   };
 
-  
+
   return (
     <div className="App">
       <h1>Sick Trick Wish List</h1>
